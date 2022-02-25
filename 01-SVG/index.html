@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -10,28 +11,68 @@
 
     <title>1-SVG</title>
   </head>
+
   <body>
 
     <h1>Dessiner des formes</h1>
+
+
     <h2>Rectangle</h2>
 
-    <h2>Donut</h2>
+    <svg width="1000" height="130" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <rect id='rect' x="10" y="10" width="400" height="100" stroke="red" fill="transparent" stroke-width="5" />
 
+
+    </svg>
+
+    <h2>Donut</h2>
+    <svg width="300" height="300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="50" r="30" stroke="black" fill="transparent" stroke-width="5"  transform="translate(100 75)"/>
+      <circle id ="donut" cx="50" cy="50" r="60" stroke="black" fill="transparent" stroke-width="5"  transform="translate(100 75)"/>
+    </svg>
 
     <h2>Ligne</h2>
 
+    <svg width="300" height="300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <line x1="20" x2="80" y1="50" y2="210" stroke="orange" stroke-width="5" />
+    </svg>
 
     <h2>Path</h2>
 
+    <svg height="100" width="50">
+      <path d="M3 3 L3 36 L24 36" stroke="black" fill="transparent" id="lettre"></path>
+      <!-- Cercle rouge qui sera déplacé le long du chemin. -->
+<circle cx="" cy="" r="5" fill="red">
+
+  <!-- Définit l'animation -->
+  <animateMotion dur="6s" repeatCount="indefinite">
+    <mpath xlink:href="#lettre"/>
+  </animateMotion>
+</circle>
+    </svg>
+    <svg height="100" width="50">
+      <path d="M24 36 L24 20 L13 3 L3 20 L3 36 M3 20 L24 20" stroke="black" fill="transparent"></path>
+    </svg>
+    <svg height="100" width="50">
+      <path d="M3 20 L20 20 L20 3 L3 3 L3 36 M16 20 L22 36" fill="transparent" stroke="black" ></path>
+    </svg>
+    <svg height="100" width="50">
+      <path d="M24 36 L24 20 L13 3 L3 20 L3 36 M3 20 L24 20" stroke="black" fill="transparent"></path>
+    </svg>
 
     <h1>Animer des formes</h1>
 
     <h2>On click</h2>
 
+  
+
     <h2>On hover</h2>
 
-    <h2>Prenez la première lettre de votre prénom que vous avez créée ci-dessus. Faite bouger une forme de votre choix le long de la lettre</h2>
+    <h2>Prenez la première lettre de votre prénom que vous avez créée ci-dessus. Faite bouger une forme de votre choix
+      le long de la lettre</h2>
+
 
 
   </body>
+
 </html>
