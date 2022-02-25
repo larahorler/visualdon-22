@@ -40,15 +40,8 @@
     <h2>Path</h2>
 
     <svg height="100" width="50">
-      <path d="M3 3 L3 36 L24 36" stroke="black" fill="transparent" id="lettre"></path>
-      <!-- Cercle rouge qui sera déplacé le long du chemin. -->
-<circle cx="" cy="" r="5" fill="red">
-
-  <!-- Définit l'animation -->
-  <animateMotion dur="6s" repeatCount="indefinite">
-    <mpath xlink:href="#lettre"/>
-  </animateMotion>
-</circle>
+      <path d="M3 3 L3 36 L24 36" stroke="black" fill="transparent"></path>
+      
     </svg>
     <svg height="100" width="50">
       <path d="M24 36 L24 20 L13 3 L3 20 L3 36 M3 20 L24 20" stroke="black" fill="transparent"></path>
@@ -71,7 +64,17 @@
     <h2>Prenez la première lettre de votre prénom que vous avez créée ci-dessus. Faite bouger une forme de votre choix
       le long de la lettre</h2>
 
+      <svg height="100" width="50">
+      <path d="M3 3 L3 36 L24 36" stroke="black" fill="transparent" id="lettre"></path>
+      <!-- Cercle rouge qui sera déplacé le long du chemin. -->
+<circle cx="" cy="" r="5" fill="red">
 
+  <!-- Définit l'animation -->
+  <animateMotion dur="6s" repeatCount="indefinite">
+    <mpath xlink:href="#lettre"/>
+  </animateMotion>
+</circle>
+    </svg>
 
   </body>
 
