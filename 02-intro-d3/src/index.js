@@ -73,5 +73,5 @@ circleC.on("click", () => {
     .append('rect')
     .attr('height', d => d)
     .attr('width', 20)
-    .attr('x',(d, i) =>  ((i*100)+10))
-    .attr('y', 600);
+    .attr('x',(d, i) =>  ((i*23)+50))
+    .attr('y', d => 500-d);
