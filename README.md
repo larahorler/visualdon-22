@@ -46,3 +46,8 @@ Ce document sera mis à jour au fur et à mesure du semestre avec les informatio
 * https://d3js.org/
 * https://www.d3-graph-gallery.com/
 * https://observablehq.com/collection/@d3/learn-d3
+
+### Manipulaton de données avec Javascript
+* https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+
